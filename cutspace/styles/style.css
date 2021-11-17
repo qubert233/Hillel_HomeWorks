@@ -1,5 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 .container {
@@ -49,7 +50,9 @@ body {
 }
 
 .intro-img {
-    margin-left: 15px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
 }
 
 .btn {
@@ -62,32 +65,73 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 50px;
-}
-
-.intro-form .btn {
     position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .intro-form-text {
     border: none;
-    padding: 16px;
+    padding: 16px 0 16px 40px;
     font-size: 16px;
     border-radius: 50px;
-    box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 17px 42px rgba(0, 0, 0, 0.12);
+    width: 90%;
 }
 
 .intro-form {
     position: relative;
     overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.mail-logo {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .company-logo {
     display: flex;
     justify-content: space-between;
-
-    margin: 50px auto;
+    margin: 70px auto;
 }
 
-@media  {
+@media (max-width: 900px) {
+    * {
+        font-size: 15px;
+    }
+    .main-heading {
+        font-size: 35px;
+        width: 90%;
 
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 5% 0 5%;
+    }
+    .col {
+        width: 100%;
+        min-width: 100%;
+        margin-bottom: 5%;
+    }
+    .navbar-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .company-logo {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2% 5% 2% 5%;
+    }
+    .container {
+        max-width: 90%;
+    }
 }
