@@ -59,6 +59,19 @@ body {
     max-width: 100%;
     margin: 0 auto;
     display: block;
+    animation: intro-img-scale 6s 2 1s;
+}
+
+@keyframes intro-img-scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .btn {
@@ -74,6 +87,12 @@ body {
     text-decoration: none;
     white-space: nowrap;
     text-align: center;
+    transition: .3s;
+}
+
+.btn:hover {
+    background-color: #ffd67f;
+    color: black;
 }
 
 .intro-form .btn {
@@ -112,10 +131,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 70px auto;
-}
-
-.provide-block {
-
 }
 
 .provide-block-img {
@@ -162,6 +177,12 @@ h5 {
 
 .btn-no-stretch {
     align-self: flex-start;
+    transition: .3s;
+}
+
+.btn-no-stretch:hover {
+    background-color: #ffd67f;
+    color: black;
 }
 
 .product-block {
@@ -210,6 +231,11 @@ h5 {
     border-radius: 50px;
     text-decoration: none;
     white-space: nowrap;
+    transition: .3s;
+}
+
+.btn-watch-now:hover {
+    background-color: rgba(255, 227, 183, 0.97);
 }
 
 .heading {
