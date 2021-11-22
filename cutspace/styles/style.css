@@ -304,8 +304,8 @@ h5 {
         visibility: hidden;
     }
 
-    .btn {
-        align-self: auto;
+    .btn-no-stretch {
+        align-self: center;
     }
 }
 
