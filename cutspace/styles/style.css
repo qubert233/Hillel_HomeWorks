@@ -682,6 +682,9 @@ h5 {
 
 
 @media (max-width: 1024px) {
+    .container {
+        margin: 0 1%;
+    }
     .product-block-img {
         position: static;
         max-width: 100%
@@ -819,5 +822,11 @@ h5 {
     }
     .footer-col:last-of-type {
         margin: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .feedback-video {
+        max-width: 100%;
     }
 }
