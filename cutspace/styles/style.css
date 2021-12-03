@@ -253,7 +253,7 @@ h5 {
     color: #323232;
 }
 
-.grey {
+.product-serve-section {
     background-color: #F5F6FA;;
     width: 1440px;
     height: 705px;
@@ -264,7 +264,7 @@ h5 {
     max-width: 100%;
 }
 
-.grey .container {
+.product-serve-section .container {
     position: static;
 }
 
@@ -649,7 +649,7 @@ h5 {
         width: auto;
         margin: 0 auto;
     }
-    .grey {
+    .product-serve-section {
         width: auto;
         height: unset;
         margin: 100px 0;
@@ -764,14 +764,14 @@ h5 {
     .container {
         width: auto;
     }
-    .grey {
+    .product-serve-section {
         margin-top: 50px;
         margin-bottom: 50px;
         position: static;
         height: unset;
         max-width: 100%;
     }
-    .grey .container {
+    .product-serve-section .container {
         position: static;
     }
     .product-sect {
