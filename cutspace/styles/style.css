@@ -169,21 +169,21 @@ section,header,footer {
     margin-top: 10%;
 }
 
-/*.mail-logo {*/
-/*    position: absolute;*/
-/*    left: 2%;*/
-/*    top: 50%;*/
-/*    transform: translate(0, -50%);*/
-/*}*/
-
 .company-logo {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    width: 1110px;
+    margin: 70px auto;
+    align-items: center;
+}
+
+.company-logo a:hover {
+    background-color: #f78434;
+    border-radius: 20px;
 }
 
 .company-item {
-    margin-bottom: 30px;
+    margin: 15px;
 }
 
 .provide-sect {
@@ -224,7 +224,7 @@ section,header,footer {
     background-repeat: no-repeat;
     position: absolute;
     left: 32%;
-    bottom: 50px;
+    bottom: 16%;
     padding: 25px 5px 25px 80px;
     z-index: 1;
     width: 260px;
@@ -310,7 +310,7 @@ h5 {
 }
 
 .product-buttons-container .btn {
-    width: 40%;
+    width: auto
 }
 
 .btn-watch-now::before {
@@ -371,7 +371,7 @@ h5 {
     flex-direction: column;
     width: 49%;
     background-color: #F78434;
-    border-radius: 8px;
+    border-radius: 10px;
     color: white;
     padding: 40px;
     text-align: center;
@@ -397,7 +397,7 @@ h5 {
 .seller-block {
     flex-direction: column;
     width: 49%;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 40px;
     text-align: center;
     background-color: white;
@@ -976,6 +976,10 @@ h5 {
     .experience-text {
         margin-left: 50px;
     }
+    .company-logo {
+        margin-bottom: 50px;
+        justify-content: space-around;
+    }
 }
 
 @media (max-width: 580px) {
@@ -1026,6 +1030,7 @@ h5 {
     }
     .company-logo {
         flex-direction: column;
+        margin-bottom: 50px;
     }
     .testimonial-main-container {
         flex-direction: column;
