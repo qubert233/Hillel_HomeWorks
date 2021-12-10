@@ -127,19 +127,27 @@
         }
     }
     &-phone:before {
-        content: url("/images/dot.svg");
+        content: "";
+        background-color: #E6E6F0;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
         position: absolute;
         left: -10px;
-        top: -2px;
+        top: 9px;
         @media (max-width: 992px) {
             display: none;
         }
     }
     &-phone:after {
-        content: url("/images/dot.svg");
+        content: "";
+        background-color: #E6E6F0;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
         position: absolute;
         right: -15px;
-        top: -2px;
+        top: 9px;
         @media (max-width: 992px) {
             display: none;
         }
