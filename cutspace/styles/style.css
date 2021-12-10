@@ -175,6 +175,7 @@ section,header,footer {
     width: 1110px;
     margin: 70px auto;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .company-logo a:hover {
@@ -449,11 +450,16 @@ h5 {
     padding-bottom: 50px;
 }
 
-.testimonial-with-element {
+.testimonial-item-with-element {
     position: relative;
     max-width: 100%;
     display: block;
-    margin: auto;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.testimonial-with-element {
+    width: 100%;
 }
 
 .testimonial-block {
@@ -498,6 +504,12 @@ h5 {
 
 .testimonial-item:first-child .testimonial-profile p {
     margin: 0;
+}
+
+.testimonial-item:last-of-type {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
 }
 
 .testimonial-img {
@@ -1009,9 +1021,9 @@ h5 {
 }
 
 @media (max-width: 768px) {
-    .element {
-        right: 156px;
-    }
+    /*.element {*/
+    /*    right: 156px;*/
+    /*}*/
     .provide-block-text {
         padding: 0;
     }
@@ -1133,18 +1145,18 @@ h5 {
     .company-logo {
         margin: 20px 10px;
     }
-    .element {
-        right: -16px;
-    }
+    /*.element {*/
+    /*    right: -16px;*/
+    /*}*/
     .experience-text {
         margin: 0 auto;
     }
 }
 
 @media (max-width: 375px) {
-    .element {
-        right: -34px;
-    }
+    /*.element {*/
+    /*    right: -34px;*/
+    /*}*/
 }
 
 @media (max-width: 320px) {
@@ -1154,7 +1166,7 @@ h5 {
     .testimonial-img {
         width: 100%;
     }
-    .element {
-        right: -40px;
-    }
+    /*.element {*/
+    /*    right: -40px;*/
+    /*}*/
 }
