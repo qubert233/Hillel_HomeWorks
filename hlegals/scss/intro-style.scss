@@ -1,5 +1,6 @@
 @import "variables";
 @import "intro-header";
+@import "mixin";
 
 @font-face {
     font-family: 'TT Norms';
@@ -76,6 +77,81 @@ body {
     .carousel-item {
         background-color: $light-grey;
         border-radius: 12px;
+
+        @media (max-width: 768px) {
+            padding: 20px;
+        }
+
+        .carousel-img {
+            @media (max-width: 992px) {
+                align-self: center;
+            }
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        .upper-text {
+            color: $blue;
+            font-size: 14px;
+            margin: 40px 0 3px 0;
+            text-transform: uppercase;
+            &:after {
+                content: '\203A';
+                margin-left: 6px;
+            }
+        }
+
+        .section-heading {
+            background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            @include fluid-type(32px, 42px);
+            @include fluid-line-height(38px, 50px);
+        }
+
+        .carousel-info {
+            color: $grey;
+
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: row;
+                margin: 10px 10px 0 0;
+                align-items: center;
+            }
+
+
+            &-mini-photo {
+                display: none;
+
+                @media (max-width: 768px) {
+                    display: block;
+                    margin-right: 10px;
+                }
+            }
+
+            &-text {
+
+                @media (max-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            &-name {
+                font-size: 18px;
+                @media (max-width: 768px) {
+                    margin-bottom: 5px;
+                }
+            }
+            &-role {
+                font-size: 16px;
+                @media (max-width: 768px) {
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
 }
 
