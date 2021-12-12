@@ -62,12 +62,7 @@
           justify-content: space-around;
           align-self: flex-end;
         }
-        @media (max-width: 768px) {
-          align-self: center;
-        }
-        @media (max-width: 375px) {
-          align-self: end;
-        }
+
         .text {
 
           .name {
