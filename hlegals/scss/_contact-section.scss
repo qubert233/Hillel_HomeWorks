@@ -4,6 +4,7 @@
 .contact-section {
   width: 1110px;
   margin: 0 auto;
+  margin-top: 80px;
   margin-bottom: 80px;
 
   a {
@@ -13,6 +14,7 @@
   @media (max-width: 1115px) {
     width: 100%;
     margin-bottom: 40px;
+    margin-top: 0;
   }
 
   .contact-container {
@@ -79,6 +81,7 @@
           font-size: 12px;
           line-height: 16px;
           margin-left: 10px;
+          word-break: break-all;
           &:hover {
             text-decoration: underline;
             color: $red;
@@ -157,6 +160,9 @@
         border-radius: 12px;
         font-weight: 700;
         box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+        @media (max-width: 300px) {
+          width: 100%;
+        }
       }
     }
   }
