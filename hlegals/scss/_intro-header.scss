@@ -2,6 +2,7 @@
     position: absolute;
     width: 100%;
     margin: 50px 0;
+    padding: 0;
 
     @media (max-width: 992px) {
         padding: 20px;
@@ -58,7 +59,7 @@
             }
             &.active {
                 color: white;
-                background-color: $red-color;
+                background-color: $red;
             }
         }
     }
@@ -117,14 +118,17 @@
         @media (max-width: 992px) {
             margin: 0;
             color: #B3B3BA;
-            font-weight: 700;
         }
     }
     &-phone  {
+        font-weight: 700;
+        text-decoration: none;
+        text-align: right;
+
         &:hover {
             color: black;
         }
-        text-decoration: none;
+
         @media (max-width: 300px) {
             font-size: 12px;
         }
@@ -162,6 +166,83 @@
     @media (max-width: 992px) {
         &-address, &-social {
             display: none;
+        }
+    }
+}
+
+.second-page {
+    .navbar {
+        position: static;
+
+        &-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        .nav-link {
+            color: $blue;
+
+            &:hover {
+                color: $red;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .navbar-top {
+        width: 57%;
+        @media (max-width: 992px) {
+             width: 100%;
+        }
+        a, p {
+            color: $grey;
+        }
+        .navbar-language {
+            .active {
+                color: white;
+            }
+        }
+    }
+
+    .navbar-brand {
+
+        @media (max-width: 1280px) {
+            font-size: 19px;
+        }
+
+    }
+
+    .navbar-brand-more {
+        font-size: 38px;
+
+        &:before, &:after {
+            content: "";
+            background-image: url(../images/slash.svg);
+            display: inline-block;
+            width: 21px;
+            height: 46px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            vertical-align: middle;
+        }
+        &:after {
+            content: "";
+            background-image: url(../images/symbol.svg);
+            width: 41px;
+        }
+        @media (max-width: 1160px) {
+            font-size: 30px;
+        }
+        @media (max-width: 992px) {
+            font-size: 19px;
+
+            &:before, &:after {
+                height: 25px;
+            }
+            &:before {
+                width: 10px;
+            }
+        }
+        @media (max-width: 300px) {
+                display: block;
         }
     }
 }
