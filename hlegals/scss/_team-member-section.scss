@@ -1,6 +1,10 @@
 @import "mixin";
 @import "variables";
 
+.container {
+  padding: 0;
+}
+
 .team-member-section {
   display: flex;
   width: 1110px;
@@ -10,7 +14,6 @@
 
   @media (max-width: 1115px) {
     width: 100%;
-    padding: 0 20px;
   }
 
   @media (max-width: 800px) {

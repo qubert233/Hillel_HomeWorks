@@ -66,10 +66,7 @@
 
     .navbar-container {
         flex-wrap: wrap;
-
-        @media (max-width: 992px) {
-            padding: 0;
-        }
+        padding: 0;
     }
 
     &-brand {

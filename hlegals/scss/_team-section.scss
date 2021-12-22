@@ -4,13 +4,18 @@
   width: 100%;
   text-align: justify;
 
+  .container {
+    padding: 0;
+    @media (max-width: 575px) {
+      padding: 0 20px;
+    }
+  }
+
   & .header {
     background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
     background-size: 100%;
     -webkit-background-clip: text;
-    //-moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    //-moz-text-fill-color: transparent;
     text-align: left;
     width: 930px;
     height: auto;

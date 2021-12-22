@@ -21,6 +21,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 0;
 
     @media (max-width: 1160px) {
       flex-direction: column;
@@ -33,7 +34,7 @@
       width: 415px;
       justify-content: center;
 
-      @media (max-width: 1115px) {
+      @media (max-width: 1160px) {
         padding: 0 20px;
         margin-bottom: 40px;
         justify-content: unset;
